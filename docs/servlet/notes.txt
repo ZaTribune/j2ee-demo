@@ -1,0 +1,4 @@
+Whatever inside [WEB-INF](src/main/webapp/WEB-INF), it won't be accessible to the webUser.
+you can't call sendRedirect(), after you have already used forward().
+If there's a jsp managed by another preprocessing servlet,
+make sure to call that servlet and then forward to the page from within that servlet.
